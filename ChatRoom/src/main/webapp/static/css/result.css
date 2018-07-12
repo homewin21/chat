@@ -1,0 +1,84 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     overflow: hidden;
+     background: url(../img/earth.jpg)no-repeat;
+     background-size: cover;
+ }
+ input{
+     border: 0;
+ }
+ #main {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ #main>.login {
+     width: 400px;
+     height: 450px;
+     background-color: #9ca5af;
+     padding-left: 20px;
+     padding-right: 20px;
+     opacity: 0.7;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ #main>.login>.msg{
+     font-size: 19px;
+     height: 50px;
+     border: 0;
+     border-radius: 2px ;
+     background: greenyellow;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+ }
+#main>.login>i{
+    margin-top: 30px;
+    font-size: 80px;
+}
+ 
+ @keyframes fade-in {
+     0% {
+         opacity: 0;
+     }
+     /*鍒濆鐘舵�� 閫忔槑搴︿负0*/
+     40% {
+         opacity: 0;
+     }
+     /*杩囨浮鐘舵�� 閫忔槑搴︿负0*/
+     100% {
+         opacity: 0.7;
+     }
+     /*缁撴潫鐘舵�� 閫忔槑搴︿负1*/
+ }
+ 
+ @-webkit-keyframes fade-in {
+     /*閽堝webkit鍐呮牳*/
+     0% {
+         opacity: 0;
+     }
+     40% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 0.7;
+     }
+ }
+ 
+ #main {
+     animation: fade-in;
+     /*鍔ㄧ敾鍚嶇О*/
+     animation-duration: 1s;
+     /*鍔ㄧ敾鎸佺画鏃堕棿*/
+     -webkit-animation: fade-in 1s;
+     /*閽堝webkit鍐呮牳*/
+ }

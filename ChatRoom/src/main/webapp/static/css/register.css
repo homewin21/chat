@@ -1,0 +1,182 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     overflow: hidden;
+     background: url(../img/earth.jpg)no-repeat;
+     background-size: cover;
+ }
+ input{
+     border: 0;
+ }
+ #main {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+ 
+ #main>.login {
+     width: 400px;
+     height: 450px;
+     background-color: #9ca5af;
+     padding-left: 20px;
+     padding-right: 20px;
+     opacity: 0.7;
+ }
+ 
+ #main>.login>.title {
+     height: 20%;
+     border-bottom: 2px solid #909295;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "榛戜綋";
+     font-size: 25px;
+     text-shadow: 3px 3px 8px #2b2c2d;
+     font-weight: bolder;
+ }
+ 
+ #main>.login>.title>span {
+     color: #2b2c2d;
+ }
+ 
+ #main>.login>.message {
+     padding-top: 35px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ #main>.login>.message>.nameMsg{
+    height:15px;
+    color: #f12b3e;
+ }
+ #main>.login>.message>.pwdMsg{
+    color: #f12b3e;
+    height:15px;
+ }
+ #main>.login>.message>.emailMsg{
+    color: #f12b3e;
+    height:15px;
+ }
+ 
+  #main>.login>.message>.username{
+    display:flex;
+  }
+  #main>.login>.message>.username>.checkname1{
+  
+   color: #f12b3e;
+  }
+  #main>.login>.message>.username>.checkname2{
+    
+    color: green;
+  }
+ #main>.login>.message>.username>i {
+     font-size: 30px;
+     color: #545659;
+ }
+ 
+ #main>.login>.message>.username>input {
+     margin-left: 15px;
+     height: 30px;
+     font-size: 20px;
+     margin-right: 15px;
+ }
+ 
+ #main>.login>.message>.password {
+    
+     display:flex;
+     padding-top: 15px;
+ }
+ 
+ #main>.login>.message>.password>i {
+     font-size: 30px;
+     color: #545659;
+ }
+ 
+ #main>.login>.message>.password>input {
+     margin-left: 15px;
+     height: 30px;
+     font-size: 20px;
+     margin-right: 15px;
+ }
+  #main>.login>.message>.password>.checkname3{
+  
+   color: #f12b3e;
+  }
+  #main>.login>.message>.password>.checkname4{
+    
+    color: green;
+  }
+ #main>.login>.message>.submit {
+     padding-top: 30px;
+    
+ }
+ 
+ #main>.login>.message>.submit>input {
+     border: 0;
+     width: 100%;
+     height: 50px;
+     background: #ec8017;
+     font-size: 20px;
+ }
+ #main>.login>.message>.email{
+     
+     display:flex;
+     padding-top: 15px;
+ }
+ #main>.login>.message>.email>i {
+     font-size: 30px;
+     color: #545659;
+ }
+ #main>.login>.message>.email>input{
+     margin-left: 15px;
+     height: 30px;
+     font-size: 20px;
+     margin-right: 15px;
+ }
+  #main>.login>.message>.email>.checkname5{
+ 
+   color: #f12b3e;
+  }
+  #main>.login>.message>.email>.checkname6{
+   
+    color: green;
+  }
+ @keyframes fade-in {
+     0% {
+         opacity: 0;
+     }
+     /*鍒濆鐘舵�� 閫忔槑搴︿负0*/
+     40% {
+         opacity: 0;
+     }
+     /*杩囨浮鐘舵�� 閫忔槑搴︿负0*/
+     100% {
+         opacity: 0.7;
+     }
+     /*缁撴潫鐘舵�� 閫忔槑搴︿负1*/
+ }
+ 
+ @-webkit-keyframes fade-in {
+     /*閽堝webkit鍐呮牳*/
+     0% {
+         opacity: 0;
+     }
+     40% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 0.7;
+     }
+ }
+ 
+ #main {
+     animation: fade-in;
+     /*鍔ㄧ敾鍚嶇О*/
+     animation-duration: 1s;
+     /*鍔ㄧ敾鎸佺画鏃堕棿*/
+     -webkit-animation: fade-in 1s;
+     /*閽堝webkit鍐呮牳*/
+ }
